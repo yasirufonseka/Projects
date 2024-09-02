@@ -1,0 +1,140 @@
+.carosual{
+    display:flex;
+    position: relative; 
+  
+    img{
+     width: clamp(100vw, 50% , 50vw);
+     max-height: 100vh;
+        
+       }
+    .carosualText{
+      position: absolute;
+      width: clamp(300px , 50% , 600px);
+      height: clamp(100px , 50% , 400px);
+      top: 20vh;
+      right: 15vh;
+      color: var( --white);
+     
+      .carousalButton{
+        float: left ;
+        margin: 40px;
+        padding: 15px 40px;
+        font-size: 1.2rem;
+        background-color: var(--gold-crayola);
+        border: 0px ;
+        border-radius: 2px 30px;
+        color: var(--white);
+        background: linear-gradient(to right,var(--btn-gradient-start), var( --btn-gradient-end));
+        box-shadow: 10px 15px 20px rgb(43, 39, 1);
+      }
+
+      h1{
+        margin: 5px;
+        font-size: 42px;
+        line-height: 150%;
+      }
+  
+    }  
+   
+  }
+  /* AboutUs.css */
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 40px;
+  height:80vh;
+  position: relative;
+
+  .about-us-content{
+   max-width:50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: justify;
+   padding: 30px;
+   letter-spacing: var(--letterSpacing-3);
+
+   .about-us-button{
+        float: left ;
+        margin: 40px;
+        padding: 15px 40px;
+        font-size: 1.2rem;
+        background-color: var(--gold-crayola);
+        border: 0px ;
+        border-radius: 2px 30px;
+        color: var(--white);
+        background: linear-gradient(to right,var(--btn-gradient-start), var( --btn-gradient-end));
+        box-shadow: 5px 7px 10px rgba(43, 39, 1, 0.493);
+
+   }
+   
+    
+
+    
+  }
+
+  .about-us-Images{
+    width: 50%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px dashed black;
+    
+    
+
+
+    .about-us-Images1{
+      width: 50%;
+      
+    }
+    .about-us-Images2{
+      width: 200px;
+      position: absolute;
+      top: 8% ;
+      right: 5%;
+    }
+    .about-us-Images3{
+      width: 200px;
+      position: absolute;
+      bottom: 8% ;
+      right: 60%;
+    }
+  }
+}
+
+
+
+ 
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.service-card {
+  background: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  flex: 1;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.service-card h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 0.9em;
+  color: #666;
+}
